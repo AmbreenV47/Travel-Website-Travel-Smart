@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.wrapper {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    background: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 45%;
+    padding: 2%;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.booked-trips{
+    background: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    border-radius: 8px;
+    width: 45%;
+    font-size: 1.2rem;
+}
+
+#booked-trips {
+    list-style-type: none;
+    padding: 0;
+}
