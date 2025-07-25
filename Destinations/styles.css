@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    width: 100%;
+    position: relative;
+}
+.search-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+#search-container input {
+    background: transparent;
+    width: 100%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+    transition: all 0.2s ease-in-out;
+}
+#search-container input:focus {
+    border-bottom-color: #2476da;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+}
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background: #2476da;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+#search-container button:hover{
+    background: #025ac5;
+}
+.button-value, .price-filter {
+    border: 2px solid #2476da;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background: transparent;
+    color: #2476da;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.wrapper .active {
+    background: #2476da;
+    color: white;
+}
+#countries {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+.card {
+    background: rgb(224, 224, 224);
+    min-width: 18em;
+    height: max-content;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4em 3.5em rgba(1, 2, 68, 0.11);
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 15em;
+}
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+.container h5 {
+    font-weight: 500;
+}
+.hide {
+    display: none;
+}
+#suggestions {
+    background: white;
+    /* border: 1px solid #ccc; */
+    position: absolute;
+    top: 3.5em;
+    width: 75%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.suggestion-item {
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+#buttons {
+    margin-top: 5em;
+}
+.price {
+    color: #110f29; /* Adjust color as needed */
+    font-weight: bold;
+}
+
+.explore-more {
+    color: #2476da;
+    text-decoration: none;
+    margin-top: 0.5em;
+    display: inline-block; /* Make it a block element for spacing */
+}
+
+.explore-more:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 720px) {
+    img{
+        max-width: 100%;
+        
+        object-fit: contain;
+        height: 10em;
+    }
+    .card{
+        max-width: 10em;
+        margin-top: 1em;
+        flex-wrap: wrap;
+        
+        
+        
+        
+    }
+    #countries{
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+
+    }
+}

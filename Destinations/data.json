@@ -1,0 +1,36 @@
+{
+    "allDest": [
+        {
+            "Name": "Bali",
+            "country": "Indonesia",
+            "continent": "Asia",
+            "image": "../Images/All/Bali.jpg",
+            "price": "$200",
+            "fileLocation": "Bali.html"
+        },
+        {
+            "Name": "Bora Bora",
+            "country": "French Polynesia",
+            "continent": "Europe",
+            "image": "../Images/All/BoraBora.webp",
+            "price": "$300",
+            "fileLocation": "bora-bora.html"
+        },
+        {
+            "Name": "Dubai",
+            "country": "UAE",
+            "continent": "Asia",
+            "image": "../Images/All/Dubai.jpg",
+            "price": "$400",
+            "fileLocation": "dubai.html"
+        },
+        {
+            "Name": "Rome",
+            "country": "Italy",
+            "continent": "Europe",
+            "image": "../Images/All/Rome.jpg",
+            "price": "$900",
+            "fileLocation": "rome.html"
+        }
+    ]
+}
